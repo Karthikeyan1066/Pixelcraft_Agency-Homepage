@@ -76,12 +76,12 @@ export default function Navbar() {
         </div>
 
         {/* Right actions */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-6 lg:gap-10 ml-4 lg:ml-0">
           {/* Dark mode toggle - Architectural Style */}
           <button
             onClick={toggleDark}
             aria-label="Toggle dark mode"
-            className="w-12 h-12 rounded-2xl flex items-center justify-center border border-ocean/10 dark:border-slate/10 hover:border-ocean/40 text-dark dark:text-slate transition-all duration-500 hover:rotate-12"
+            className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl flex items-center justify-center border border-ocean/10 dark:border-slate/10 hover:border-ocean/40 text-dark dark:text-slate transition-all duration-500 hover:rotate-12"
           >
             {dark ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -108,12 +108,12 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden w-12 h-12 flex flex-col items-center justify-center gap-2 text-ocean"
+            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 text-ocean"
             aria-label="Toggle menu"
           >
-            <span className={`block w-7 h-0.5 bg-current transition-all duration-500 ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
-            <span className={`block w-5 h-0.5 bg-current transition-all duration-500 ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block w-7 h-0.5 bg-current transition-all duration-500 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-current transition-all duration-500 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`block w-4 h-0.5 bg-current transition-all duration-500 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-current transition-all duration-500 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
       </div>
@@ -123,13 +123,13 @@ export default function Navbar() {
         className={`md:hidden fixed inset-0 z-[-1] overflow-hidden transition-all duration-1000 ease-in-out ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
           } bg-slate dark:bg-dark flex flex-col justify-center`}
       >
-        <div className="px-12 py-20 flex flex-col gap-12 items-center text-center">
+        <div className="px-12 py-20 flex flex-col gap-8 items-center text-center">
           {navLinks.map((link, i) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-6xl font-display font-bold text-dark dark:text-slate hover:text-ocean transition-all duration-500 transform hover:scale-110"
+              className="text-4xl font-display font-bold text-dark dark:text-slate hover:text-ocean transition-all duration-500 transform hover:scale-110"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {link.label}
@@ -138,7 +138,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-12 bg-ocean text-white text-center text-sm font-bold tracking-[0.5em] uppercase px-16 py-8 rounded-[3rem] shadow-2xl"
+            className="mt-8 bg-ocean text-white text-center text-[10px] font-bold tracking-[0.4em] uppercase px-12 py-6 rounded-[3rem] shadow-2xl"
           >
             Start_Submission
           </a>

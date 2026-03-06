@@ -87,17 +87,17 @@ export default function Services() {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-16 mb-32 reveal">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 lg:gap-16 mb-24 lg:mb-32 reveal text-center md:text-left">
           <div className="max-w-3xl">
             <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-ocean mb-8 block">
               Discipline & Methodology
             </span>
-            <h2 className="font-display text-6xl md:text-8xl font-bold text-dark dark:text-slate leading-[0.8] tracking-tighter">
+            <h2 className="font-display text-5xl md:text-8xl font-bold text-dark dark:text-slate leading-[0.8] tracking-tighter">
               Where Logic <br />
               <span className="italic font-light text-ocean">Meets Magic.</span>
             </h2>
           </div>
-          <p className="max-w-sm text-deep/60 dark:text-slate/50 text-xl leading-relaxed font-light border-l-2 border-ocean/10 pl-8">
+          <p className="max-w-sm mx-auto md:mx-0 text-deep/60 dark:text-slate/50 text-lg md:text-xl leading-relaxed font-light border-l-0 md:border-l-2 border-ocean/10 pl-0 md:pl-8 mt-8 md:mt-0">
             Bespoke solutions at the intersection of complex architecture and human intuition.
           </p>
         </div>

@@ -70,21 +70,21 @@ export default function Portfolio() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-16 mb-32 reveal">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 lg:gap-16 mb-24 lg:mb-32 reveal text-center md:text-left">
           <div className="max-w-2xl">
             <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-ocean mb-8 block">
               The Digital Archive
             </span>
-            <h2 className="font-display text-7xl md:text-9xl font-bold text-dark dark:text-slate leading-[0.75] tracking-tighter">
+            <h2 className="font-display text-6xl md:text-9xl font-bold text-dark dark:text-slate leading-[0.75] tracking-tighter">
               Bespoke <br />
               <span className="italic font-light text-ocean">Artifacts.</span>
             </h2>
           </div>
-          <div className="flex flex-col items-start md:items-end gap-10">
-            <p className="max-w-sm text-deep/60 dark:text-slate/50 text-xl leading-relaxed text-left md:text-right font-light italic">
+          <div className="flex flex-col items-center md:items-end gap-10">
+            <p className="max-w-sm text-deep/60 dark:text-slate/50 text-lg md:text-xl leading-relaxed text-center md:text-right font-light italic">
               A curated ledger of digital transformations and architectural triumphs.
             </p>
-            <div className="h-px w-32 bg-ocean/20" />
+            <div className="hidden md:block h-px w-32 bg-ocean/20" />
           </div>
         </div>
 
